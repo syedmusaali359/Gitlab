@@ -72,15 +72,14 @@ Now that GitLab is set up, you can access it via a web browser by entering the U
 
 ## Step 9: Change the Root Password
 
-For enhanced security, consider configuring SSL/TLS (HTTPS) for your GitLab instance using a valid SSL certificate. You can use Let's Encrypt or a commercial certificate for this purpose.
-
-
-## Step 10: Optional - Set Up SSL/TLS (HTTPS)
-
 For security reasons, change the root password once you're logged in:
 
 1- Go to "User Settings" > "Change password" and follow the prompts to set a new password.
 
+
+## Step 10: Optional - Set Up SSL/TLS (HTTPS)
+
+For enhanced security, consider configuring SSL/TLS (HTTPS) for your GitLab instance using a valid SSL certificate. You can use Let's Encrypt or a commercial certificate for this purpose.
 
 
 ## Conclusion:
