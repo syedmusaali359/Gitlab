@@ -84,6 +84,36 @@ For security reasons, change the root password once you're logged in:
 
 For enhanced security, consider configuring SSL/TLS (HTTPS) for your GitLab instance using a valid SSL certificate. You can use Let's Encrypt or a commercial certificate for this purpose.
 
+## Step 11: Login into the EC2 Instance 
+
+## Step 12: Simply download one of the binaries for your system: 
+
+```console
+sudo curl -L -o /usr/bin/gitlab-runner "https://gitlab-runner-downloads.s3.amazonaws.com/latest/binaries/gitlab-runner-linux-amd64"
+```
+
+## Step 13: Give it permission to execute:
+
+```console
+sudo chmod +x /usr/bin/gitlab-runner
+```
+
+## Step 14: Create a GitLab CI user:
+
+```console
+sudo useradd --comment 'GitLab Runner' --create-home gitlab-runner --shell /bin/bash
+```
+
+## Step 15: Install and run as service:
+```console
+sudo gitlab-runner install --user=gitlab-runner --working-directory=/home/gitlab-runner
+sudo gitlab-runner start
+```
+
+## Step 16: Create runner in Project > Setting > CI/CD > Runner > Expand
+
+## Step 17: Now You'll be seeing command, just run them on your EC2 Instance, and choose shell. You'll get the Congrats messege on your runner page, and runner get the green sign in front of it.
+
 
 ## Conclusion:
 Congratulations! You've successfully installed GitLab on your Ubuntu EC2 instance. With GitLab, you can now efficiently manage your repositories and collaborate with your team, streamlining your development processes.
