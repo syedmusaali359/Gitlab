@@ -70,7 +70,7 @@ Now that GitLab is set up, you can access it via a web browser by entering the U
 **-** **Username:** root  
 **-** **Password:** The initial root password can be found in:
 ```console
-sudo cat /etc/gitlab/initial_root_password.
+sudo cat /etc/gitlab/initial_root_password
 ```
 
 ## Step 9: Change the Root Password
