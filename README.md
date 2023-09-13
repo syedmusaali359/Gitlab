@@ -114,6 +114,17 @@ sudo gitlab-runner start
 
 ## Step 17: Now You'll be seeing command, just run them on your EC2 Instance, and choose shell. You'll get the Congrats messege on your runner page, and runner get the green sign in front of it.
 
+## Step 18: If you're getting error:
+ERROR: Job failed: prepare environment: Process exited with status 1. 
+Check https://docs.gitlab.com/runner/shells/index.html#shell-profile-loading 
+for more information
+```console
+find / -name .bash_logout
+sudo rm -r /home/gitlab-runner/.bash_logout
+sudo rm -r /home/<username>/.bash_logout
+```
+
+
 
 ## Conclusion:
 Congratulations! You've successfully installed GitLab on your Ubuntu EC2 instance. With GitLab, you can now efficiently manage your repositories and collaborate with your team, streamlining your development processes.
